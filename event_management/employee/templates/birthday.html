@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Happy Birthday</title>
+ <meta charset="utf-8" />
+</head>
+<body>
+  <div>
+   <p>Happy Birthday dear {{user.name}}!</p>
+    {% autoescape off %}
+          {{ birthday_template.content | safe }}
+    {% endautoescape %}
+  </div>
+</body>
+</html>
